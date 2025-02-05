@@ -52,7 +52,14 @@ const Footer = () => {
 
       {/* Footer Bottom */}
       <div className="text-gray-500 border-t border-gray-800 text-center mt-8 pt-4">
-        Copyright &copy; 2025 Daniel Pyae. All Rights Reserved.
+        Copyright &copy; 2025{" "}
+        <a
+          href="https://danielp.vercel.app/"
+          className="underline font-semibold"
+        >
+          Daniel Pyae
+        </a>
+        . All Rights Reserved.
       </div>
     </div>
   );
