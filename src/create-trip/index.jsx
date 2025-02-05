@@ -15,7 +15,7 @@ import {
   DialogHeader,
   DialogTitle,
   DialogTrigger,
-} from "@/components/UI/Dialog";
+} from "../components/UI/dialog";
 import { FcGoogle } from "react-icons/fc";
 import { useGoogleLogin } from "@react-oauth/google";
 import axios from "axios";
@@ -314,25 +314,28 @@ function CreateTrip() {
         <DialogContent>
           <DialogHeader>
             <DialogTitle>
-              <div className="flex items-center justify-center gap-2 md:gap-12">
-                <img src="logo.svg" alt="logo" className="w-12 h-12" />
-                <h2 className="text-xl font-bold">EZ TRAVEL</h2>
+              <div className="flex items-center justify-between">
+                <a href="/">
+                  <img src="logo.svg" alt="logo" className="w-12 h-12" />
+                </a>
+                <h2 className="text-xl font-bold text-[#FF6B08]">EZ TRAVEL</h2>
+                <span></span>
               </div>
             </DialogTitle>
-            <div className="flex flex-col gap-4 ">
-              <p className="text-center font-bold">
-                Ready to Plan For Your Trip 🌴⛱️
+            <div className="flex flex-col gap-4 justify-center ">
+              <p className="text-start font-bold text-gray-900">
+                Hey Traveler, Are You Ready to explore? 🌍✈️🛳️
               </p>
               <DialogDescription>
-                <p className="text-start text-gray-500">
-                  Please Sign In to continue ...
+                <p className="text-start text-gray-200 font-light text-sm">
+                  Get Plans for Your Next Destinations ...
                 </p>
               </DialogDescription>
               <button
-                className=" bg-[#FF6B08]  hover:bg-[#FF9C08] text-gray-900 font-semibold px-6 py-2 rounded-lg cursor-pointer flex items-center justify-center gap-2"
+                className=" bg-[#FF6B08] hover:scale-105 transition-transform duration-500 ease-in-out text-gray-900 font-semibold px-6 py-2 rounded-lg cursor-pointer flex items-center justify-center gap-2"
                 onClick={login}
               >
-                Sign In with Google
+                Sign in with Google
                 <FcGoogle />
               </button>
             </div>
