@@ -3,7 +3,7 @@ import React from "react";
 const Footer = () => {
   return (
     <div
-      className="py-10 w-full text-center bg-gray-950 overflow-hidden"
+      className="py-10 px-4 md:px-24 lg:px-32 w-full text-center bg-gray-950 overflow-hidden"
       id="Footer"
     >
       <div className="container mx-auto flex flex-col md:items-center md:flex-row md:justify-between gap-4 ">
@@ -42,7 +42,7 @@ const Footer = () => {
             </a>
           </p>
         </div>
-        <div className="flex items-center justify-between gap-2">
+        <div className="flex items-center justify-start gap-2">
           <a href="/">
             <img src="logo.svg" alt="logo" className="cursor-pointer" />
           </a>

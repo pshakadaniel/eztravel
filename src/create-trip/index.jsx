@@ -162,7 +162,7 @@ function CreateTrip() {
       });
   };
   return (
-    <div className="px-4 md:px-24 lg:px-32 py-10 flex flex-col gap-4 min-h-screen ">
+    <div className="px-4 md:px-24 lg:px-32 py-4 flex flex-col gap-4 min-h-screen ">
       <div className="flex flex-col gap-2">
         <h2 className="font-bold text-3xl text-[#FF6B08]">
           Tell us your travel preferences
