@@ -4,19 +4,20 @@ import { GetPlaceDetails, photoRef_URL } from "@/service/googleApi";
 import { useState, useEffect } from "react";
 import placeholder from "../../../assets/placeholder.jpg";
 
-function visitPlanCard({ activity, index, trip }) {
+function visitPlanCard({ activity, index }) {
   const [photoURL, setPhotoURL] = useState("");
-
+  useEffect(() => {
+    activity && GetPlacePhoto();
+  }, [activity]);
   const GetPlacePhoto = async () => {
     const data = {
-      textQuery:
-        activity.placeName + " " + trip?.userPreferences.destination.label,
+      textQuery: activity?.placeName,
     };
     const result = await GetPlaceDetails(data).then((resp) => {
-      console.log(resp.data.places[0].photos[3].name);
+      console.log(resp.data.places[0].photos[2].name);
       const photoRef = photoRef_URL.replace(
         "{NAME}",
-        resp.data.places[0].photos[3].name
+        resp.data.places[0].photos[2].name
       );
       setPhotoURL(photoRef);
     });
