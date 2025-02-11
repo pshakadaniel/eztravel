@@ -12,7 +12,6 @@ function Layout() {
       <div className="relative z-10 ">
         <Navbar />
       </div>
-
       {/* Page Content */}
       <div className="relative z-10  ">
         <Outlet /> {/* Renders current page content */}

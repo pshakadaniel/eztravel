@@ -7,6 +7,7 @@ import Layout from "./Layout"; // Import the Layout
 import CreateTrip from "./create-trip/index.jsx";
 import ViewTrip from "./view-trip/[tripID]/index.jsx";
 import MyTrips from "./my-trips/index.jsx";
+import Signin from "./components/signin.jsx";
 import "./index.css";
 
 const router = createBrowserRouter([
@@ -20,6 +21,7 @@ const router = createBrowserRouter([
       { path: "/my-trips", element: <MyTrips /> },
     ],
   },
+  { path: "/sign-in", element: <Signin /> },
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(

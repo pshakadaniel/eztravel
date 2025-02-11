@@ -53,15 +53,15 @@ function MyTrips() {
   };
 
   const SkeletonCard = () => (
-    <div className="w-[240px] md:w-[320px] xl:w-[450px] flex flex-col gap-4 items-start justify-center rounded-xl p-4 bg-gray-900 border border-gray-300 shadow-lg animate-pulse">
-      {/* Skeleton for Image */}
-      <div className="h-40 w-full bg-gray-300 rounded-xl"></div>
-      {/* Skeleton for Title */}
-      <div className="h-6 w-3/4 bg-gray-300 rounded-md mt-4"></div>
-      {/* Skeleton for Details */}
-      <div className="h-4 w-1/2 bg-gray-300 rounded-md mt-2"></div>
-      <div className="h-4 w-1/3 bg-gray-300 rounded-md mt-2"></div>
-      <div className="h-4 w-2/3 bg-gray-300 rounded-md mt-2"></div>
+    <div className="h-full flex flex-col justify-between items-start gap-4 p-4 rounded-xl border border-white/20 bg-white/10 backdrop-blur-xl animate-pulse">
+      {/* Skeleton for Trip Image */}
+      <div className="object-cover rounded-xl h-40 w-full bg-gray-300"></div>
+      {/* Skeleton for Destination */}
+      <div className="h-8 w-3/4 bg-gray-300 rounded-md"></div>
+      {/* Skeleton for Trip Details */}
+      <div className="h-6 w-1/2 bg-gray-300 rounded-full mt-2"></div>
+      <div className="h-6 w-1/2 bg-gray-300 rounded-full mt-2"></div>
+      <div className="h-6 w-1/2 bg-gray-300 rounded-full mt-2"></div>
     </div>
   );
 

@@ -27,21 +27,6 @@ const Footer = () => {
 
         {/* Right Section with Navigation Links */}
 
-        <div className="w-full md:w-1/3 mb-8 md:mb-0">
-          <p className="text-gray-400 mt-4 text-start">
-            🌍 We believe that everyone deserves the opportunity to explore the
-            world. ✈️ Our mission is to make traveling simpler, more accessible,
-            and truly enjoyable for everyone. 🗺️ From personalized itineraries
-            to expert travel tips and essential resources, we’re here to help
-            you plan your next unforgettable adventure. 🌟✨
-            <a
-              href="/create-trip"
-              className="text-[#FF6B08] underline underline-offset-2 ml-2"
-            >
-              Let's Get Started
-            </a>
-          </p>
-        </div>
         <div className="flex items-center justify-start gap-2">
           <a href="/">
             <img src="logo.svg" alt="logo" className="cursor-pointer" />

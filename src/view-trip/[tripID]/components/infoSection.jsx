@@ -4,6 +4,8 @@ import { GetPlaceDetails } from "@/service/googleApi";
 import { useState } from "react";
 import { photoRef_URL } from "../../../service/googleApi";
 import placeholder from "../../../assets/placeholder.jpg";
+import { AsyncImage } from "loadable-image";
+import { Blur } from "transitions-kit";
 
 function infoSection({ trip }) {
   const [photoURL, setPhotoURL] = useState("");
@@ -23,13 +25,38 @@ function infoSection({ trip }) {
       setPhotoURL(photoRef);
     });
   };
+  const images = [photoURL || placeholder];
   return (
     <div>
-      <img
+      {/* <img
         src={photoURL || placeholder}
         alt="placeholder img"
         className="h-[400px] w-full object-cover rounded-xl"
-      />
+      /> */}
+      {images.slice(0, 16).map((src, i) => (
+        <AsyncImage
+          key={i}
+          src={src || placeholder}
+          Transition={Blur}
+          style={{
+            width: "100%",
+            height: "400px",
+            borderRadius: "8px",
+            objectFit: "cover",
+          }}
+          loader={
+            <div
+              style={{
+                width: "100%",
+                height: "400px",
+                background: "#888",
+                objectFit: "cover",
+                rounded: "8px",
+              }}
+            />
+          }
+        />
+      ))}
       <div className="mt-8">
         <div className="flex justify-between items-center">
           <h1 className=" px-2 py-1 font-bold text-2xl md:3xl text-gray-300">
