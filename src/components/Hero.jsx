@@ -3,8 +3,8 @@ import { Link } from "react-router-dom";
 
 function Hero() {
   return (
-    <div className="flex justify-between items-center p-4 px-4 md:px-24 lg:px-32">
-      <div className="flex flex-col items-center justify-between gap-4 md:gap-8 mx-auto px-12 md:px-20 py-20 xl:py-32 place-items-center max-w-4xl h-auto">
+    <div className="flex justify-between items-center py-4 px-4 md:px-24 lg:px-32">
+      <div className="flex flex-col items-center justify-between gap-4 md:gap-8 mx-auto px-12 md:px-20 py-20 xl:py-32 place-items-center max-w-4xl">
         <h1 className="font-extrabold text-3xl md:text-6xl text-center ">
           <span className="text-[#FF6B08]">
             Discover your next Adventure with AI:
@@ -62,7 +62,7 @@ function Hero() {
         </Link>
       </div>
       <div>
-        <h1>lee lr</h1>
+        <h1></h1>
       </div>
     </div>
   );

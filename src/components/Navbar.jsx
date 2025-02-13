@@ -25,13 +25,9 @@ function Header() {
   };
 
   return (
-    <div className="flex justify-between items-center p-4 px-4 md:px-24 lg:px-32">
-      <a
-        className="flex items-center gap-2 p-2 font-bold text-[#FF6B08]"
-        href="/"
-      >
+    <div className="flex justify-between items-center py-4 px-4 md:px-24 lg:px-32">
+      <a href="/">
         <img src={Logo} alt="logo" />
-        <h1 className="hidden md:flex">EZ TRAVEL</h1>
       </a>
       <ToastContainer />
       {user ? (
