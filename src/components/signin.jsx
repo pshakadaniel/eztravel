@@ -74,8 +74,8 @@ function SignIn() {
 
   return (
     <div className="flex justify-between items-center ">
-      <div className="bg-linear-to-r to-black from-[#FF6B08]  w-full lg:w-2/5 h-dvh flex overflow-hidden">
-        <div className="border-2 border-stone-500 h-[400px] w-[300px] lg:w-[400px] lg:h-[600px] rounded-3xl m-auto">
+      <div className="bg-gradient-to-l from-black to-blue-900 w-full lg:w-2/5 h-dvh flex overflow-hidden">
+        <div className="border-2 border-black h-[400px] w-[300px] lg:w-[400px] lg:h-[600px] rounded-3xl m-auto">
           <div className="flex flex-col justify-center items-center gap-4 h-full mx-2 text-center">
             <h1 className="text-[#FF6B08] font-bold text-2xl lg:text-4xl">
               EZ TRAVEL

@@ -66,7 +66,7 @@ function MyTrips() {
   );
 
   return (
-    <div className="px-4 md:px-24 lg:px-32 py-10 flex flex-col gap-4 min-h-screen">
+    <div className="py-8 px-4 md:px-24 lg:px-32">
       <h1 className="text-center font-bold text-3xl lg:text-4xl pb-6 text-[#FF6B08]">
         My Trips
       </h1>

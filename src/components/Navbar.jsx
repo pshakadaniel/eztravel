@@ -25,7 +25,7 @@ function Header() {
   };
 
   return (
-    <div className="flex justify-between items-center py-4 px-4 md:px-24 lg:px-32">
+    <div className="flex justify-between items-center">
       <a href="/">
         <img src={Logo} alt="logo" />
       </a>

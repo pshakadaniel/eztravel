@@ -4,17 +4,15 @@ import Navbar from "./components/Navbar";
 
 function Layout() {
   return (
-    <div className="relative min-h-screen w-full bg-slate-950 text-white">
-      {/* Background Effect */}
-      <div className="absolute inset-0 bg-[radial-gradient(circle_500px_at_50%_200px,#3e3e3e,transparent)]"></div>
-
+    <div className="flex flex-col">
       {/* Navbar */}
-      <div className="relative z-10 ">
+      <div className="py-4 px-4 md:px-24 lg:px-32 bg-black">
         <Navbar />
       </div>
+
       {/* Page Content */}
-      <div className="relative z-10  ">
-        <Outlet /> {/* Renders current page content */}
+      <div className="bg-gradient-to-b from-black to-blue-900 text-stone-100  ">
+        <Outlet />
       </div>
     </div>
   );
