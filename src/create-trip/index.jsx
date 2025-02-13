@@ -135,7 +135,7 @@ function CreateTrip() {
   };
 
   return (
-    <div className="my-8 py-8 px-4 md:px-24 lg:px-32 overflow-hidden">
+    <div className="my-8 py-8 px-4 md:px-24 lg:px-32 ">
       <h2 className="font-bold text-3xl text-[#FF6B08]">
         Tell us your travel preferences
       </h2>
