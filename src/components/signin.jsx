@@ -74,16 +74,16 @@ function SignIn() {
 
   return (
     <div className="flex justify-between items-center ">
-      <div className="bg-gradient-to-l from-black to-blue-900 w-full lg:w-2/5 h-dvh flex overflow-hidden">
-        <div className="border-2 border-black h-[400px] w-[300px] lg:w-[400px] lg:h-[600px] rounded-3xl m-auto">
+      <div className="bg-gradient-to-r from-[#240036] to-[#010f3b] w-full lg:w-2/5 h-dvh flex overflow-hidden">
+        <div className="border-2 border-[#FF6B08] h-[400px] w-[300px] lg:w-[400px] lg:h-[600px] rounded-3xl m-auto">
           <div className="flex flex-col justify-center items-center gap-4 h-full mx-2 text-center">
-            <h1 className="text-[#FF6B08] font-bold text-2xl lg:text-4xl">
-              EZ TRAVEL
-            </h1>
-
-            <p className="text-slate-300 text-lg font-semibold ">
-              Welcome back! Sign in to your account
-            </p>
+            <div className="flex items-center justify-between gap-4 ">
+              <img src="/logo.svg" alt="logo" />
+              <h1 className="text-[#FF6B08] font-bold text-2xl lg:text-4xl">
+                EZ TRAVEL
+              </h1>
+            </div>
+            <p className="text-slate-300 text-lg font-semibold "></p>
             <button
               className="w-3/4 flex items-center justify-evenly bg-slate-200 text-slate-900 font-semibold px-4 py-2 rounded-full cursor-pointer mt-8 hover:scale-105 transition-transform duration-500 ease-in-out"
               onClick={login}
@@ -95,7 +95,43 @@ function SignIn() {
         </div>
       </div>
 
-      <div className="hidden lg:flex w-3/5 h-dvh bg-black bg-cover bg-center bg-no-repeat"></div>
+      <div className="hidden lg:flex w-3/5 h-dvh bg-gradient-to-br from-[#043b8d] to-[#8b4712] bg-cover bg-center bg-no-repeat overflow-hidden">
+        <div className="flex flex-col m-auto text-white text-7xl font-semibold px-4 ">
+          <p>
+            WE BRING YOU THE TRIPS PLANS
+            <p>
+              YOU GIVE US YOUR
+              <span className="text-[#FF6B08]">3-MINUTE</span>
+            </p>
+          </p>
+          <p>
+            <span className="text-[#FF6B08]">100% </span>FREE TO START PLAN FOR
+            YOUR TRIPS
+          </p>
+          <p>
+            WE BRING YOU THE TRIPS PLANS
+            <p>
+              YOU GIVE US YOUR
+              <span className="text-[#FF6B08]">3-MINUTE</span>
+            </p>
+          </p>
+          <p>
+            <span className="text-[#FF6B08]">100% </span>FREE TO START PLAN FOR
+            YOUR TRIPS
+          </p>
+          <p>
+            WE BRING YOU THE TRIPS PLANS
+            <p>
+              YOU GIVE US YOUR
+              <span className="text-[#FF6B08]">3-MINUTE</span>
+            </p>
+          </p>
+          <p>
+            <span className="text-[#FF6B08]">100% </span>FREE TO START PLAN FOR
+            YOUR TRIPS
+          </p>
+        </div>
+      </div>
 
       <ToastContainer />
     </div>

@@ -20,7 +20,7 @@ const Footer = () => {
         </ul>
       </div>
       {/* Footer Bottom */}
-      <div className="text-gray-500 border-t border-gray-800 text-center mt-8 pt-4 text-sm">
+      <div className="text-gray-500 border-t border-gray-800 text-center pt-4 text-sm">
         Copyright &copy; 2025{" "}
         <a
           href="https://danielp.vercel.app/"

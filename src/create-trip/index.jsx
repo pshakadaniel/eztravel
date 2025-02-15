@@ -23,21 +23,24 @@ function CreateTrip() {
   const navigate = useNavigate();
 
   useEffect(() => {
-    // Restore trip details after login
+    // Restore trip details after login (runs only once)
     const savedTripDetails = JSON.parse(localStorage.getItem("unsavedTrip"));
     const user = localStorage.getItem("user");
 
     if (savedTripDetails) {
-      setFormData(savedTripDetails);
-      setPlace(OnGenerateTrip?.destination);
+      setFormData((prev) => ({ ...prev, ...savedTripDetails })); // ✅ Prevents re-render loops
+      setPlace(savedTripDetails.destination); // ✅ Sets place safely
     }
 
-    // If user logs in and trip details exist, auto-generate the trip
     if (user && savedTripDetails) {
-      localStorage.removeItem("unsavedTrip"); // Clear after use
-      OnGenerateTrip(); // Auto-generate trip after login
+      localStorage.removeItem("unsavedTrip"); // ✅ Clears storage safely
+
+      // ✅ Delayed function call to avoid infinite updates
+      setTimeout(() => {
+        OnGenerateTrip();
+      }, 1000);
     }
-  }, [formData]);
+  }, []); // ✅ Empty dependency array → Runs only once when component mounts
 
   const OnGenerateTrip = async () => {
     setLoading(true);
