@@ -13,7 +13,7 @@ const Footer = () => {
             About Us
           </a>
           <div>
-            <a href="/" className="hover:text-white">
+            <a href="https://danielp.vercel.app/" className="hover:text-white">
               Contact Us
             </a>
           </div>
@@ -26,7 +26,7 @@ const Footer = () => {
           href="https://danielp.vercel.app/"
           className="underline font-semibold"
         >
-          Daniel Pyae
+          EZ TRAVEL- AI TRIPS PLANNER
         </a>
         . All Rights Reserved.
       </div>
