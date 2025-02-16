@@ -73,8 +73,8 @@ function SignIn() {
   };
 
   return (
-    <div className="flex justify-between items-center ">
-      <div className="bg-gradient-to-r from-[#240036] to-[#010f3b] w-full lg:w-2/5 h-dvh flex overflow-hidden">
+    <div className="flex flex-col-reverse lg:flex-row justify-between items-center h-screen">
+      <div className=" bg-gradient-to-r from-[#240036] to-[#010f3b] w-full h-screen md:h-3/4 lg:w-1/3  lg:h-screen flex items-center justify-center">
         <div className="border-2 border-[#FF6B08] h-[400px] w-[300px] lg:w-[400px] lg:h-[600px] rounded-3xl m-auto">
           <div className="flex flex-col justify-center items-center gap-4 h-full mx-2 text-center">
             <div className="flex items-center justify-between gap-4 ">
@@ -95,8 +95,8 @@ function SignIn() {
         </div>
       </div>
 
-      <div className="hidden lg:flex w-3/5 h-dvh bg-gradient-to-br from-[#043b8d] to-[#8b4712] bg-cover bg-center bg-no-repeat overflow-hidden">
-        <div className="flex flex-col m-auto text-white text-7xl font-semibold px-4 ">
+      <div className="flex w-full lg:w-2/3 md:h-1/4 lg:h-screen bg-gradient-to-br from-[#043b8d] to-[#8b4712] overflow-hidden">
+        <div className="flex flex-col text-white text-xl md:text-5xl lg:text-7xl font-semibold p-4 ">
           <p>
             WE BRING YOU THE TRIPS PLANS
             <p>

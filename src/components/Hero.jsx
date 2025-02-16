@@ -6,20 +6,20 @@ function Hero() {
     <div className="flex items-center justify-between gap-24 min-h-screen py-8 px-4 md:px-24 lg:px-32 bg-transparent">
       <div className="">
         <p className="text-white text-4xl md:text-6xl xl:text-8xl font-semibold">
-          WE BRING YOU THE <span className="text-[#FF6B08]">TRIP PLANS</span>
+          AI-POWERED <span className="text-[#FF6B08]">TRIP PLANS</span>
           <p>
-            YOU GIVE US YOUR <span className="text-[#FF6B08]">3-MINUTE</span>
+            PLAN YOUR TRIPS IN <span className="text-[#FF6B08]">3-MINUTE</span>
           </p>
         </p>
         <div className="flex flex-col items-start gap-8">
           <p className="text-white text-4xl md:text-6xl xl:text-8xl font-semibold">
-            START PLAN FOR YOUR TRIPS WITH US
+            WE'RE GIVING WITH
             <span className="text-[#FF6B08] pl-2">100% FREE</span>
           </p>
           <Link to="/create-trip">
             <div
               className=" flex items-center justify-center gap-4 px-6 py-3 rounded-full cursor-pointer
-          backdrop-blur-md bg-white/20 border border-white/20 shadow-[0_8px_32px_0_rgba(31,38,135,0.37)]
+          backdrop-blur-md border-white/20 shadow-[0_8px_32px_0_rgba(255,10,10,0.7)]
            hover:scale-105 transition-all duration-500 ease-in-out hover:bg-gradient-to-r hover:to-[#FF6B08] hover:from-[#240036]"
             >
               <button className="text-white font-semibold">
