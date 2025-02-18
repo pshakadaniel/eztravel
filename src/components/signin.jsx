@@ -96,7 +96,7 @@ function SignIn() {
       </div>
 
       <div className="flex w-full lg:w-2/3 md:h-1/4 lg:h-screen bg-gradient-to-br from-[#043b8d] to-[#8b4712] overflow-hidden">
-        <div className="flex flex-col text-white text-xl md:text-5xl lg:text-7xl font-semibold p-4 ">
+        <div className="flex flex-col text-white text-xl md:text-5xl lg:text-7xl font-semibold p-4 justify-between">
           <p>
             WE BRING YOU THE TRIPS PLANS
             <p>
