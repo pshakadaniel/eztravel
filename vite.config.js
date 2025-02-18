@@ -2,7 +2,7 @@ import path from "path";
 import react from "@vitejs/plugin-react";
 import tailwindcss from "@tailwindcss/vite";
 import { defineConfig } from "vite";
-import { sitemap } from "vite-plugin-sitemap";
+import vitePluginSitemap from "vite-plugin-sitemap";
 
 // Example function to fetch real trip IDs from an API or database
 async function getTripIDs() {
@@ -22,7 +22,7 @@ export default defineConfig(async () => {
     plugins: [
       react(),
       tailwindcss(),
-      sitemap({
+      vitePluginSitemap({
         hostname: "https://eztraveldp.vercel.app", // Your actual domain
         dynamicRoutes: [
           "/sign-in",
