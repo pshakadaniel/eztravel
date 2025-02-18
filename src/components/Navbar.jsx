@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Logo from "../assets/logo.svg";
+import Logo from "/favicon.ico";
 import {
   Popover,
   PopoverContent,
@@ -27,7 +27,7 @@ function Header() {
   return (
     <div className="flex justify-between items-center">
       <a href="/">
-        <img src={Logo} alt="logo" />
+        <img src={Logo} alt="logo" className="w-10 h-10" />
       </a>
       <ToastContainer />
       {user ? (

@@ -6,7 +6,7 @@ function Layout() {
   return (
     <div className="flex flex-col min-h-screen relative">
       {/* Navbar */}
-      <div className="py-4 px-4 md:px-24 lg:px-32 bg-transparent backdrop-blur-3xl">
+      <div className="py-4 px-8 md:px-24 lg:px-32 bg-transparent backdrop-blur-3xl">
         <Navbar />
       </div>
 
