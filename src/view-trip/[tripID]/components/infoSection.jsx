@@ -9,30 +9,46 @@ import { Blur } from "transitions-kit";
 
 function infoSection({ trip }) {
   const [photoURL, setPhotoURL] = useState("");
+  const [error, setError] = useState(null);
+
   useEffect(() => {
-    trip && GetPlacePhoto();
+    if (trip?.userPreferences?.destination?.label) {
+      GetPlacePhoto();
+    }
   }, [trip]);
+
   const GetPlacePhoto = async () => {
-    const data = {
-      textQuery: trip?.userPreferences?.destination?.label,
-    };
-    const result = await GetPlaceDetails(data).then((resp) => {
-      console.log(resp.data.places[0].photos[1].name);
-      const photoRef = photoRef_URL.replace(
-        "{NAME}",
-        resp.data.places[0].photos[1].name
-      );
-      setPhotoURL(photoRef);
-    });
+    try {
+      const data = {
+        textQuery: trip.userPreferences.destination.label,
+      };
+      const response = await GetPlaceDetails(data);
+
+      if (response.data?.places?.[0]?.photos?.[0]?.name) {
+        const photoRef = photoRef_URL.replace(
+          "{NAME}",
+          response.data.places[0].photos[0].name
+        );
+        setPhotoURL(photoRef);
+      } else {
+        setPhotoURL(placeholder);
+      }
+    } catch (err) {
+      console.error("Error fetching place photo:", err);
+      setError(err.message);
+      setPhotoURL(placeholder);
+    }
   };
+
   const images = [photoURL || placeholder];
+
   return (
     <div>
-      {/* <img
-        src={photoURL || placeholder}
-        alt="placeholder img"
-        className="h-[400px] w-full object-cover rounded-xl"
-      /> */}
+      {error && (
+        <div className="text-red-500 mb-4">
+          Failed to load destination image
+        </div>
+      )}
       {images.slice(0, 16).map((src, i) => (
         <AsyncImage
           key={i}

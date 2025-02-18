@@ -79,7 +79,7 @@ function hotelCard({ hotel, index }) {
             {hotel.rating || hotel.Rating}
           </h2>
           <h2 className=" flex items-center gap-2 text-gray-400">
-            <div>💵</div> {hotel.price} USD per night
+            <div>💵</div> {hotel.price || hotel.Price} USD per night
           </h2>
         </div>
       </div>
