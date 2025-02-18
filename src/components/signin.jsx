@@ -78,7 +78,7 @@ function SignIn() {
         <div className="border-2 border-[#FF6B08] h-[400px] w-[300px] lg:w-[400px] lg:h-[600px] rounded-3xl m-auto">
           <div className="flex flex-col justify-center items-center gap-4 h-full mx-2 text-center">
             <div className="flex items-center justify-between gap-4 ">
-              <img src="/favicon.ico" alt="logo" />
+              <img src="/favicon.ico" alt="logo" className="w-10 h-10" />
               <h1 className="text-[#FF6B08] font-bold text-2xl lg:text-4xl">
                 EZ TRAVEL
               </h1>
