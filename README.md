@@ -9,6 +9,11 @@ EZTravel is a web application designed to help users plan their travels efficien
 - Share travel plans with friends
 - View Trip Plans
 
+## Tech-stack
+- Frontend: React, tailwindCSS, Shadcn
+- Backend: Firebase
+- API: Google map, Google photo, Gemini Flash 2.0
+
 ## Installation
 
 1. Clone the repository:
@@ -35,3 +40,8 @@ EZTravel is a web application designed to help users plan their travels efficien
 ## Contributing
 
 Contributions are welcome! Please open an issue or submit a pull request.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
+
